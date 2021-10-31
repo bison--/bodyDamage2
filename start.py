@@ -36,7 +36,7 @@ with dpg.texture_registry(show=False):
     dpg.add_static_texture(width, height, data, tag="vitruvianMan")
 
 with dpg.window(tag='mainWindow', label="Body Damage Calculator v2", min_size=WINDOW_SIZE, max_size=WINDOW_SIZE):
-    dpg.add_image('dudeVinci', pos=(140, 80), width=381, height=401)
+    dpg.add_image('vitruvianMan', pos=(140, 80), width=381, height=401)
 
     # body parts
     dpg.add_slider_int(tag='sldHead', label="HEAD", pos=(270, 60), width=100, default_value=100, callback=bd_handler.calculate)
